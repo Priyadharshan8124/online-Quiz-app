@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Quiz App</title>
+  <link rel="stylesheet" href="APP.CSS" />
+</head>
+<body>
+
+  <!-- WELCOME PAGE -->
+  <div id="welcome-page" class="page active">
+    <h1>Welcome to the Quiz App!</h1>
+    <button onclick="goToLogin()">Get Started</button>
+  </div>
+
+  <!-- LOGIN PAGE -->
+  <div id="login-page" class="page">
+    <h2>Login</h2>
+    <input type="text" id="username" placeholder="Enter your name" />
+    <button onclick="startQuiz()">Start Quiz</button>
+  </div>
+
+  <!-- QUIZ PAGE -->
+  <div id="quiz-page" class="page">
+    <h2 id="greeting"></h2>
+    <div id="quiz">
+      <div id="question">Question text</div>
+      <ul id="options">
+        <!-- Options go here -->
+      </ul>
+    </div>
+  </div>
+
+  <!-- RESULT PAGE -->
+  <div id="result-page" class="page">
+    <h2>Quiz Completed</h2>
+    <div id="final-score"></div>
+    <button onclick="restartQuiz()">Restart</button>
+  </div>
+
+  <script src="APP.JS"></script>
+</body>
+</html>
